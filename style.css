@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+/* width */
+::-webkit-scrollbar {
+  display: none;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -40,7 +45,7 @@ body {
 
 .top {
   height: 40vh;
-  width: 100vw;
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url(./back.jpg);
   background-size: cover;
@@ -195,7 +200,7 @@ body {
 
 /***** LISTS *****/
 .container {
-  width: 100vw;
+  width: 100%;
   margin: 60px 0;
   display: flex;
   justify-content: center;
@@ -234,7 +239,7 @@ h2 {
   border-top: 2px solid #3b3b3b;
 }
 .item:nth-child(even) {
-  background-color: #3b3b3b;
+  background-color: #333333;
 }
 
 .item__description {
