@@ -2,4 +2,6 @@
 
 A budget controller app that calculates your income and expenses made with vanilla javascript.
 
-note: project not finished yet
+## Screenshots
+
+<img src="sc.png" width="600px">
