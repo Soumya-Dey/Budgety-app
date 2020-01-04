@@ -129,11 +129,16 @@
 
     <script src="app.js"></script>
     <script>
+        const addBar = document.querySelector(".add");
+        const scrlUpBtn = document.querySelector(".scroll-up-btn");
+
         window.onscroll = function () {
-            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-                document.querySelector(".scroll-up-btn").classList.add("show");
+            if (window.pageYOffset >= addBar.offsetTop) {
+                addBar.classList.add("sticky");
+                scrlUpBtn.classList.add("show");
             } else {
-                document.querySelector(".scroll-up-btn").classList.remove("show");
+                addBar.classList.remove("sticky");
+                scrlUpBtn.classList.remove("show");
             }
         };
 

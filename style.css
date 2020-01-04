@@ -34,6 +34,13 @@ body {
   float: right;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
 .red {
   color: #a52f2b !important;
   border: 3px solid #a52f2b !important;
@@ -41,6 +48,11 @@ body {
 
 .red-focus:focus {
   border: 1px solid #a52f2bd2 !important;
+}
+
+.red-btn{
+  border: 3px solid #a52f2b !important;
+  color: #a52f2b !important;
 }
 
 /**********************************************
@@ -52,7 +64,8 @@ body {
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(./back.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +86,7 @@ body {
   font-weight: 300;
 }
 
-.budget__title--month{
+.budget__title--month {
   font-weight: 600;
 }
 
@@ -136,6 +149,7 @@ body {
 .add {
   padding: 14px;
   background-color: #383838;
+  position: sticky;
 }
 
 .add__container {
@@ -354,7 +368,7 @@ h2 {
   display: inline-block;
   line-height: 1.1;
   opacity: 0;
-  transition: opacity 300ms ease;
+  transition: all 300ms ease;
 }
 
 .scroll-up-btn:active {

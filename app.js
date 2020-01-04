@@ -134,7 +134,8 @@ var uiController = (function () {
     percentageLabel: ".budget__expenses--percentage",
     container: ".container",
     expensesPercLabel: ".item__percentage",
-    dateLabel: ".budget__title--month"
+    dateLabel: ".budget__title--month",
+    scrollUpBtn: ".scroll-up-btn"
   };
 
   var formatNumber = function (num, type) {
@@ -226,6 +227,8 @@ var uiController = (function () {
       });
 
       document.querySelector(DOMstrings.inputBtn).classList.toggle("red");
+
+      document.querySelector(DOMstrings.scrollUpBtn).classList.toggle("red-btn");
     }
   };
 })();
